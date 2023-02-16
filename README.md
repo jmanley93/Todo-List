@@ -8,3 +8,5 @@ Form uses basic HTML controls with custom styling. Fields should be in a logical
 To install, clone repository into your app\public\wp-content\plugins folder. 
 To display, add a [todoList] shortcode to a post.
 Everything else should work out of the box. 
+
+I haven't implemented user authorization, so only already signed in admin users will be able to POST new todos that are submitted. Other users will see thier TODO list update temporarily, but their changes will not be saved to the server. 
