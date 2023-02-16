@@ -1,0 +1,90 @@
+
+ /* Input text */
+ .matchingInput
+ {
+     font-family: inherit;
+ }
+ 
+  /* Fancy checkbox*/
+ .container {
+     display: block;
+     position: relative;
+     padding-left: 35px;
+     margin: 6px 0px 6px 0px;
+     cursor: pointer;
+     user-select: none;
+   }
+   
+ .container input {
+   opacity: 0;
+ }
+ 
+ .checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 25px;
+   width: 25px;
+   background-color: #eee;
+ }
+ 
+ .container:hover input ~ .checkmark {
+   background-color: #ccc;
+ }
+ 
+ .container input:checked ~ .checkmark {
+   background-color: #2196F3;
+ }
+ 
+ .container.disabled {
+   cursor: default;
+ }
+ 
+ .container.disabled:hover input ~ .checkmark {
+   background-color: #eee;
+ }
+ 
+ .container.disabled:hover input:checked ~ .checkmark {
+   background-color: #2196F3;
+ }
+ 
+ .checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+ }
+ 
+ .container input:checked ~ .checkmark:after {
+   display: block;
+ }
+ 
+ .container .checkmark:after {
+   left: 9px;
+   top: 5px;
+   width: 5px;
+   height: 10px;
+   border: solid white;
+   border-width: 0 3px 3px 0;
+   transform: rotate(45deg);
+ }
+ 
+  /* Todo list display */
+ .taskList {
+     max-height: 200px;
+     overflow: auto;
+     margin-bottom: 20px;
+ }
+ 
+  /* Form display */
+ .formContainer {
+     border-top: 3px solid;
+     padding-top: 5px;
+ }
+ 
+ .taskLabel {
+    font-size: 130%;
+ }
+
+ .dateInput {
+  margin-bottom: 5px;
+}
